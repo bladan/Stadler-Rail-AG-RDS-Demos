@@ -1,0 +1,294 @@
+{
+  "header": {
+    "name": {
+      "value": "GeoFencing Web Definition"
+    },
+    "fleet": {
+      "key": "TEMPLATE PROJECT TYPE1"
+    },
+    "version": 1,
+    "modificationDate": "2024-07-05 13:52:22Z",
+    "snapshotDate": "2024-07-05 13:52:22Z"
+  },
+  "actionGroups": [
+    {
+      "name": {
+        "value": "Disco-Licht"
+      },
+      "linkedAreas": [
+        {
+          "geoShape": {
+            "type": "polygon",
+            "fencePoints": [
+              {
+                "lat": {
+                  "NormValue": 47.386802007696275,
+                  "NormUnit": "°"
+                },
+                "latDirection": "NORTH",
+                "long": {
+                  "NormValue": 8.513274763913744,
+                  "NormUnit": "°"
+                },
+                "longDirection": "EAST"
+              },
+              {
+                "lat": {
+                  "NormValue": 47.38475581065961,
+                  "NormUnit": "°"
+                },
+                "latDirection": "NORTH",
+                "long": {
+                  "NormValue": 8.520455920977405,
+                  "NormUnit": "°"
+                },
+                "longDirection": "EAST"
+              },
+              {
+                "lat": {
+                  "NormValue": 47.384305261192594,
+                  "NormUnit": "°"
+                },
+                "latDirection": "NORTH",
+                "long": {
+                  "NormValue": 8.521370894657329,
+                  "NormUnit": "°"
+                },
+                "longDirection": "EAST"
+              },
+              {
+                "lat": {
+                  "NormValue": 47.383835934736254,
+                  "NormUnit": "°"
+                },
+                "latDirection": "NORTH",
+                "long": {
+                  "NormValue": 8.521149082856136,
+                  "NormUnit": "°"
+                },
+                "longDirection": "EAST"
+              },
+              {
+                "lat": {
+                  "NormValue": 47.383986119656896,
+                  "NormUnit": "°"
+                },
+                "latDirection": "NORTH",
+                "long": {
+                  "NormValue": 8.520095476800464,
+                  "NormUnit": "°"
+                },
+                "longDirection": "EAST"
+              },
+              {
+                "lat": {
+                  "NormValue": 47.386069891276634,
+                  "NormUnit": "°"
+                },
+                "latDirection": "NORTH",
+                "long": {
+                  "NormValue": 8.512581602035011,
+                  "NormUnit": "°"
+                },
+                "longDirection": "EAST"
+              },
+              {
+                "lat": {
+                  "NormValue": 47.38676446351184,
+                  "NormUnit": "°"
+                },
+                "latDirection": "NORTH",
+                "long": {
+                  "NormValue": 8.512498422609564,
+                  "NormUnit": "°"
+                },
+                "longDirection": "EAST"
+              },
+              {
+                "lat": {
+                  "NormValue": 47.386802007696275,
+                  "NormUnit": "°"
+                },
+                "latDirection": "NORTH",
+                "long": {
+                  "NormValue": 8.513274763913744,
+                  "NormUnit": "°"
+                },
+                "longDirection": "EAST"
+              }
+            ]
+          },
+          "name": {
+            "value": "Zürich Hardbrücke"
+          }
+        }
+      ],
+      "linkedActions": [
+        {
+          "key": {
+            "value": "GFE_xDiscoLightEnabled"
+          },
+          "signalname": {
+            "value": "GFE_xDiscoLightEnabled"
+          },
+          "actionParams": []
+        }
+      ],
+      "linkedRoutes": [],
+      "linkedVehicles": [],
+      "linkedSchedules": [
+        {
+          "type": "RFC8984",
+          "title": "Taylor Swift Letzigrund",
+          "timeZone": "Europe/Zurich",
+          "start": "2024-07-09 16:00:00",
+          "end": "2024-07-10 02:00:00",
+          "recurrenceRule": {
+            "frequency": "DAILY",
+            "until": "2024-07-10",
+            "byDate": []
+          },
+          "recurrenceOverrides": []
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "Erprobung Akkustik"
+      },
+      "linkedAreas": [],
+      "linkedActions": [],
+      "linkedRoutes": [],
+      "linkedVehicles": [],
+      "linkedSchedules": [
+        {
+          "type": "RFC8984",
+          "title": "Erprobung Relase X.Y.Z",
+          "timeZone": "Europe/Zurich",
+          "start": "2024-08-18 00:00:00",
+          "end": "2024-08-19 00:00:00",
+          "recurrenceRule": {
+            "frequency": "DAILY",
+            "until": "2024-08-28",
+            "byDate": []
+          },
+          "recurrenceOverrides": []
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "Hochsaison Türen"
+      },
+      "linkedAreas": [],
+      "linkedActions": [
+        {
+          "key": {
+            "value": "GFE_xDoorCycleTimeShort"
+          },
+          "signalname": {
+            "value": "GFE_xDoorCycleTimeShort"
+          },
+          "actionParams": []
+        }
+      ],
+      "linkedRoutes": [],
+      "linkedVehicles": [],
+      "linkedSchedules": [
+        {
+          "type": "RFC8984",
+          "title": "Hochsaison vormittags",
+          "timeZone": "Europe/Zurich",
+          "start": "2024-07-01 07:00:00",
+          "end": "2024-07-01 11:00:00",
+          "recurrenceRule": {
+            "frequency": "WEEKLY",
+            "until": "2024-08-31",
+            "byDate": [
+              "SU",
+              "SA"
+            ]
+          },
+          "recurrenceOverrides": []
+        }
+      ]
+    },
+    {
+      "name": {
+        "value": "Werktags"
+      },
+      "linkedAreas": [],
+      "linkedActions": [
+        {
+          "key": {
+            "value": "GFE_xAirFlapsAutomatic"
+          },
+          "signalname": {
+            "value": "GFE_xAirFlapsAutomatic"
+          },
+          "actionParams": []
+        }
+      ],
+      "linkedRoutes": [],
+      "linkedVehicles": [],
+      "linkedSchedules": [
+        {
+          "type": "RFC8984",
+          "title": "Werktags (ohne Feiertage)",
+          "timeZone": "Europe/Zurich",
+          "start": "2023-12-10 02:00:00",
+          "end": "2023-12-10 03:00:00",
+          "recurrenceRule": {
+            "frequency": "WEEKLY",
+            "until": "2024-12-14",
+            "byDate": [
+              "MO",
+              "FR",
+              "TH",
+              "WE",
+              "TU"
+            ]
+          },
+          "recurrenceOverrides": [
+            {
+              "dateTime": "2024-05-09",
+              "excluded": true
+            },
+            {
+              "dateTime": "2024-08-01",
+              "excluded": true
+            },
+            {
+              "dateTime": "2024-01-01",
+              "excluded": true
+            },
+            {
+              "dateTime": "2024-03-29",
+              "excluded": true
+            },
+            {
+              "dateTime": "2024-12-25",
+              "excluded": true
+            },
+            {
+              "dateTime": "2024-12-26",
+              "excluded": true
+            },
+            {
+              "dateTime": "2024-05-20",
+              "excluded": true
+            },
+            {
+              "dateTime": "2024-01-02",
+              "excluded": true
+            },
+            {
+              "dateTime": "2024-04-01",
+              "excluded": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
